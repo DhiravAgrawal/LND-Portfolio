@@ -3,7 +3,7 @@ import { ThemeProvider, createTheme, CssBaseline, Box } from "@mui/material";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
-import About from "./pages/About";
+import About from "./pages/AboutUs";
 import Services from "./pages/Services";
 import FAQs from "./pages/FAQs";
 import Contact from "./pages/Contact";
@@ -25,7 +25,8 @@ const App = () => {
         <Navbar />
         <Box component="main" sx={{ flexGrow: 1 }}>
           <Routes>
-            <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home />} />
+            <Route path="/home" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/services" element={<Services />} />
             <Route path="/faqs" element={<FAQs />} />

@@ -3,27 +3,26 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <AppBar position="sticky" color="primary">
+    <AppBar position="sticky" sx={{ bgcolor: "#6E0D14" }}> {/* Dark Red Background */}
       <Toolbar>
-        <Typography variant="h6" sx={{ flexGrow: 1 }}>
+        <Typography variant="h6" sx={{ flexGrow: 1, color: "#FFCC00", fontWeight: "bold" }}>
           LND Group
         </Typography>
         <Box sx={{ display: "flex", gap: 2 }}>
-          <Button color="inherit" component={Link} to="/">
-            Home
-          </Button>
-          <Button color="inherit" component={Link} to="/about">
-            About
-          </Button>
-          <Button color="inherit" component={Link} to="/services">
-            Services
-          </Button>
-          <Button color="inherit" component={Link} to="/faqs">
-            FAQs
-          </Button>
-          <Button color="inherit" component={Link} to="/contact">
-            Contact
-          </Button>
+          {["Home", "About", "Services", "FAQs", "Contact"].map((item, index) => (
+            <Button
+              key={index}
+              component={Link}
+              to={`/${item.toLowerCase()}`}
+              sx={{
+                color: "#FFFFFF", // White Text
+                fontWeight: "bold",
+                "&:hover": { color: "#FFCC00" }, // Gold on Hover
+              }}
+            >
+              {item}
+            </Button>
+          ))}
         </Box>
       </Toolbar>
     </AppBar>
