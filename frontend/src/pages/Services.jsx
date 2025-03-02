@@ -2,19 +2,35 @@
 import { Container, Grid, Card, CardContent, Typography } from "@mui/material";
 import { styled } from "@mui/system";
 
+// const services = [
+//   { title: "Event Management", image: "../../public/event.png", desc: "Smooth planning & coordination for all event aspects." },
+//   { title: "Map Drawing & Measurement", image: "../../public/map.png", desc: "Accurate measurements for optimal space utilization." },
+//   { title: "Ordering & Logistics", image: "../../public/logistics.png", desc: "Seamless ordering & timely delivery of event essentials." },
+//   { title: "Designing & Banners", image: "../../public/banner.png", desc: "Creative designs & professional banner printing." },
+//   { title: "Marketing & Promoation", image: "../../public/social.png", desc: "Digital & traditional marketing for event outreach." },
+//   { title: "Tent & Venue Setup", image: "../../public/tent.png", desc: "Comfortable and spacious tent arrangements." },
+//   { title: "Light & Sound Arrangements", image: "../../public/light.png", desc: "Professional lighting and sound systems." },
+//   { title: "Offset Printing", image: "../../public/brochure.png", desc: "High-quality printing for event materials." },
+//   { title: "Mandap & Gate Setup", image: "../../public/mandap.png", desc: "Elegant mandap & grand entry gates for events." },
+//   { title: "Catering Services", image: "../../public/catering.png", desc: "Delicious food with exceptional hospitality." },
+//   { title: "Security Arrangements", image: "../../public/security.png", desc: "Trained personnel ensuring a safe event." }
+// ];
+
+
 const services = [
-  { title: "Event Management", image: "../../public/event.png", desc: "Smooth planning & coordination for all event aspects." },
-  { title: "Map Drawing & Measurement", image: "../../public/map.png", desc: "Accurate measurements for optimal space utilization." },
-  { title: "Ordering & Logistics", image: "../../public/logistics.png", desc: "Seamless ordering & timely delivery of event essentials." },
-  { title: "Designing & Banners", image: "../../public/banner.png", desc: "Creative designs & professional banner printing." },
-  { title: "Marketing & Promoation", image: "../../public/social.png", desc: "Digital & traditional marketing for event outreach." },
-  { title: "Tent & Venue Setup", image: "../../public/tent.png", desc: "Comfortable and spacious tent arrangements." },
-  { title: "Light & Sound Arrangements", image: "../../public/light.png", desc: "Professional lighting and sound systems." },
-  { title: "Offset Printing", image: "../../public/brochure.png", desc: "High-quality printing for event materials." },
-  { title: "Mandap & Gate Setup", image: "../../public/mandap.png", desc: "Elegant mandap & grand entry gates for events." },
-  { title: "Catering Services", image: "../../public/catering.png", desc: "Delicious food with exceptional hospitality." },
-  { title: "Security Arrangements", image: "../../public/security.png", desc: "Trained personnel ensuring a safe event." }
+  { title: "Event Management", image: "/event.png", desc: "Smooth planning & coordination for all event aspects." },
+  { title: "Map Drawing & Measurement", image: "/map.png", desc: "Accurate measurements for optimal space utilization." },
+  { title: "Ordering & Logistics", image: "/logistics.png", desc: "Seamless ordering & timely delivery of event essentials." },
+  { title: "Designing & Banners", image: "/banner.png", desc: "Creative designs & professional banner printing." },
+  { title: "Marketing & Promotion", image: "/social.png", desc: "Digital & traditional marketing for event outreach." },
+  { title: "Tent & Venue Setup", image: "/tent.png", desc: "Comfortable and spacious tent arrangements." },
+  { title: "Light & Sound Arrangements", image: "/light.png", desc: "Professional lighting and sound systems." },
+  { title: "Offset Printing", image: "/brochure.png", desc: "High-quality printing for event materials." },
+  { title: "Mandap & Gate Setup", image: "/mandap.png", desc: "Elegant mandap & grand entry gates for events." },
+  { title: "Catering Services", image: "/catering.png", desc: "Delicious food with exceptional hospitality." },
+  { title: "Security Arrangements", image: "/security.png", desc: "Trained personnel ensuring a safe event." }
 ];
+
 
 const PageContainer = styled(Container)({
   backgroundColor: "#FFFFFF",
