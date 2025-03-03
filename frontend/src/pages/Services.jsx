@@ -48,6 +48,7 @@ const Title = styled(Typography)({
 const ServiceCard = styled(Card)({
   boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.2)",
   borderRadius: "12px",
+  bgcolor: "#6E0D14",
   transition: "0.3s",
   '&:hover': {
     transform: "scale(1.05)",

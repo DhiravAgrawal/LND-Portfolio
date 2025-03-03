@@ -8,14 +8,55 @@ import Services from "./pages/Services";
 import FAQs from "./pages/FAQs";
 import Contact from "./pages/Contact";
 
-// MUI Theme
 const theme = createTheme({
   palette: {
-    primary: { main: "#4D0011" },
+    primary: { main: "#b99123" }, // Updated primary color
     secondary: { main: "#1C1C1C" },
     accent: { main: "#FAEBD7" },
+    text: {
+      primary: "#b99123", // Ensures text color applies globally
+    },
+  },
+  typography: {
+    allVariants: {
+      color: "#b99123",
+    },
+  },
+  components: {
+    MuiLink: {
+      styleOverrides: {
+        root: {
+          color: "#b99123",
+          "&:hover": {
+            color: "#FAEBD7",
+          },
+        },
+      },
+    },
+    MuiButton: {
+      styleOverrides: {
+        root: {
+          color: "#b99123",
+          fontWeight: "bold",
+          "&:hover": {
+            color: "#FAEBD7",
+          },
+        },
+      },
+    },
+    MuiIconButton: {
+      styleOverrides: {
+        root: {
+          color: "#b99123",
+          "&:hover": {
+            color: "#FAEBD7",
+          },
+        },
+      },
+    },
   },
 });
+
 
 const App = () => {
   return (
@@ -25,7 +66,7 @@ const App = () => {
         <Navbar />
         <Box component="main" sx={{ flexGrow: 1 }}>
           <Routes>
-          <Route path="/" element={<Home />} />
+            <Route path="/" element={<Home />} />
             <Route path="/home" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/services" element={<Services />} />
