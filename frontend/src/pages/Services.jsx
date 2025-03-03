@@ -78,7 +78,7 @@ const ServicesPage = () => {
         {services.map((service, index) => (
           <Grid item xs={12} sm={6} md={4} key={index}>
             <ServiceCard>
-              <ServiceImage src={`/images/${service.image}`} alt={service.title} />
+              <ServiceImage src={service.image} alt={service.title} />
               <ServiceCardContent>
                 <Typography variant="h6">{service.title}</Typography>
                 <Typography variant="body2">{service.desc}</Typography>
